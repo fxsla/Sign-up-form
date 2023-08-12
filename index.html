@@ -20,33 +20,34 @@
             <div class="page-text">
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
                 <p>Sign up now to get started</p>
-                <p>You <strong>know</strong> you want to.</p>
+                <p class="third-text">You <strong>know</strong> you want to.</p>
             </div>
             <section>
-                <h2>Let's do this!</h2>
+                
                 <form action="action.php" method="get">
-                    <div class="form-card">
-                        <div>
+                    <legend>Let's do this!</legend>
+                    <div class="form-card" id="form-card">
+                        <div class="input">
                             <label for="fname">FIRST NAME</label>
                             <input type="text" id="fname" name="fname" required minlength="1" maxlength="20">
                         </div>
-                        <div>
+                        <div class="input">
                             <label for="lname">LAST NAME</label>
                             <input type="text" id="lname" name="lname" required minlength="1" maxlength="20">
                         </div>
-                        <div>
+                        <div class="input">
                             <label for="email">EMAIL</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                        <div>
+                        <div class="input">
                             <label for="phone">PHONE NUMBER</label>
                             <input type="phone" id="phone" name="phone" required pattern="[0-9]{11}">
                         </div>
-                        <div>
+                        <div class="input">
                             <label for="password">PASSWORD</label>
                             <input type="password" id="password" name="password">
                         </div>
-                        <div>
+                        <div class="input">
                             <label for="password_confirm">CONFIRM PASSWORD</label>
                             <input type="password" id="password_confirm" name="password_confirm">
                         </div>
