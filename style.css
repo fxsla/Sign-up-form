@@ -1,6 +1,8 @@
-
+.page-header {
+    height:100vh
+}
 .page-header-image {
-    height:100vh;
+    height:100%;
 }
 .page-header{
     position:relative;
@@ -8,13 +10,37 @@
 
 .page-header-title{
     position:absolute;
-    top:50px;
+    top:300px;
+    width:100%;
+    background-color: rgba(0,0,0,0.3);
+    gap: 0 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+.page-header-text {
+    color:white;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .page-header-logo {
-    border:1px solid black;
+    padding:1rem;
+
 }
 
 main {
     display:flex;
+    
+}
+
+
+.page-content {
+    display:flex;
+    flex-direction: column;
+}
+
+.page-content {
+    background-color: #f1f0f0;
 }
