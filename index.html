@@ -26,32 +26,33 @@
                 <p class="third-text">You <strong>know</strong> you want to.</p>
             </div>
             <section>
-                <form action="action.php" method="get">
+                <form action="" method="get">
                     <div class="form-container">
                         <div class="form-card" id ="form-card">
                             <div class="input">
                                 <label for="fname">FIRST NAME</label>
-                                <input type="text" id="fname" name="fname" required minlength="1" maxlength="20">
+                                <input type="text" id="fname" name="fname" required minlength="2" maxlength="20" placeholder="John">
                             </div>
                             <div class="input">
                                 <label for="lname">LAST NAME</label>
-                                <input type="text" id="lname" name="lname" required minlength="1" maxlength="20">
+                                <input type="text" id="lname" name="lname" required minlength="2" maxlength="20" placeholder="Cena">
                             </div>
                             <div class="input">
                                 <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="example@gmail.com" required>
                             </div>
                             <div class="input">
                                 <label for="phone">PHONE NUMBER</label>
-                                <input type="phone" id="phone" name="phone" required pattern="[0-9]{11}">
+                                <input type="phone" id="phone" name="phone" required pattern="[0-9]{11}" placeholder="12345678910">
                             </div>
                             <div class="input">
                                 <label for="password">PASSWORD</label>
-                                <input type="password" id="password" class="error" name="password">
+                                <input type="password" id="password" class="error" name="password" required >
+                                <span class="hidden" style="color:red;">* Passwords do not match</span>
                             </div>
                             <div class="input">
                                 <label for="password_confirm">CONFIRM PASSWORD</label>
-                                <input type="password" class="error" id="password_confirm" name="password_confirm">
+                                <input type="password" class="error" id="password_confirm" name="password_confirm" required>
                             </div>
 
                         </div>
@@ -68,6 +69,6 @@
         </section>
 
     </main>
-    
+    <script src="app.js"></script>
 </body>
 </html>

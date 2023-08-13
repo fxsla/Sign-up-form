@@ -36,6 +36,7 @@ body {
     font-size: 3rem;
     font-weight: bold;
     padding: 1rem;
+    font-family:"Norse Bold", sans-serif;
 }
 
 .page-header-logo {
@@ -109,6 +110,13 @@ main {
     }
 }
 
+input:invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border:1px solid green;
+}
 
 
 
@@ -160,4 +168,13 @@ input:focus {
     border: 2px solid rgb(86, 86, 218);
     box-shadow: 3px 5px 5px #D3D3D3;
     transition:.4s;
+}
+
+.hidden {
+    visibility: hidden;
+    color:red;
+}
+
+.show{
+    visibility: visible;
 }
