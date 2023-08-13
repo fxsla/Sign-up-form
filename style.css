@@ -7,17 +7,15 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-.page-header {
-    height:100vh;
-    width:100vh;
-}
 .page-header-image {
     height:100%;
     width:100%;
 }
+
 .page-header{
+    height:100vh;
     position:relative;
-    width:35vw;
+    overflow:hidden;
 }
 
 .page-header-title{
@@ -37,6 +35,7 @@ body {
     font-weight: bold;
     padding: 1rem;
     font-family:"Norse Bold", sans-serif;
+    height:100%;
 }
 
 .page-header-logo {
@@ -91,6 +90,7 @@ main {
 
 .page-text {
     font-size: 36px;
+    font-weight: bold;
     margin:12rem 16rem 5rem 6rem;
 }
 
@@ -152,9 +152,6 @@ input {
     appearance:none;
 }
 
-input[type="password"] {
-    
-}
 
 
 .form-container {
