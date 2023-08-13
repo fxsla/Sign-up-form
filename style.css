@@ -1,5 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Quicksand:wght@300&display=swap');
+
+
 body {
-    font-family: "Robotico", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .page-header {
@@ -30,6 +35,7 @@ body {
     color:white;
     font-size: 3rem;
     font-weight: bold;
+    padding: 1rem;
 }
 
 .page-header-logo {
@@ -47,6 +53,8 @@ main {
     display:flex;
     flex-direction: column;
     flex:1;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .page-content {
@@ -59,8 +67,10 @@ main {
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 60px 60px 60px;
-    padding:2rem;
+    padding:4rem;
     gap:20px;
+    box-shadow: 0px 5px 0px #D3D3D3;
+    width: 60%;
     
 
 }
@@ -85,4 +95,69 @@ main {
 
 .third-text {
     margin-top: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .page-text {
+      font-size: 1rem;
+      width:fit-content;
+    }
+
+    .page-header {
+        height:auto;
+        display:none;
+    }
+}
+
+
+
+
+.submit-button {
+    padding:1rem 5rem;
+    margin:2rem;
+    color:white;
+    background-color: #596D48;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px #D3D3D3;
+}
+
+.submit-button:hover{
+    cursor:pointer;
+    background-color: #748d5e;
+
+}
+
+.page-submit > p {
+    margin:2rem;
+    font-weight: bold;
+}
+
+
+p > a:last-child {
+    color:#596D48;
+    text-decoration: none;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    appearance:none;
+}
+
+input[type="password"] {
+    
+}
+
+
+.form-container {
+    width:100%;
+    background-color: white;
+    box-shadow: 0px 5px 0px #D3D3D3;
+}
+
+input:focus {
+    outline:none;
+    border: 2px solid rgb(86, 86, 218);
+    box-shadow: 3px 5px 5px #D3D3D3;
+    transition:.4s;
 }

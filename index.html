@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -23,38 +26,40 @@
                 <p class="third-text">You <strong>know</strong> you want to.</p>
             </div>
             <section>
-                
                 <form action="action.php" method="get">
-                    <legend>Let's do this!</legend>
-                    <div class="form-card" id="form-card">
-                        <div class="input">
-                            <label for="fname">FIRST NAME</label>
-                            <input type="text" id="fname" name="fname" required minlength="1" maxlength="20">
-                        </div>
-                        <div class="input">
-                            <label for="lname">LAST NAME</label>
-                            <input type="text" id="lname" name="lname" required minlength="1" maxlength="20">
-                        </div>
-                        <div class="input">
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="input">
-                            <label for="phone">PHONE NUMBER</label>
-                            <input type="phone" id="phone" name="phone" required pattern="[0-9]{11}">
-                        </div>
-                        <div class="input">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
-                        </div>
-                        <div class="input">
-                            <label for="password_confirm">CONFIRM PASSWORD</label>
-                            <input type="password" id="password_confirm" name="password_confirm">
-                        </div>
+                    <div class="form-container">
+                        <div class="form-card" id ="form-card">
+                            <div class="input">
+                                <label for="fname">FIRST NAME</label>
+                                <input type="text" id="fname" name="fname" required minlength="1" maxlength="20">
+                            </div>
+                            <div class="input">
+                                <label for="lname">LAST NAME</label>
+                                <input type="text" id="lname" name="lname" required minlength="1" maxlength="20">
+                            </div>
+                            <div class="input">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="input">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="phone" id="phone" name="phone" required pattern="[0-9]{11}">
+                            </div>
+                            <div class="input">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" class="error" name="password">
+                            </div>
+                            <div class="input">
+                                <label for="password_confirm">CONFIRM PASSWORD</label>
+                                <input type="password" class="error" id="password_confirm" name="password_confirm">
+                            </div>
 
+                        </div>
                     </div>
-                    <div>
-                        <button type="submit">Create Account</button>
+
+                    
+                    <div class="page-submit">
+                        <button type="submit" class="submit-button">Create Account</button>
                         <p>Already have an account? <a href="">Log in</a></p>
                     </div>
                 </form>
